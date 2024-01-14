@@ -4,7 +4,7 @@ from verifiers.V09 import V09
 from verifiers.V11 import V11
 from verifiers.V14 import V14
 from verifiers.V17 import V17
-from verifiers.v13 import V13
+from verifiers.V13 import V13
 
 
 def generate_secret_codes():
