@@ -16,8 +16,8 @@ def generate_secret_codes():
     return codes
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
+
+def solve(num1, num2, num3, num4):
     allCodes = generate_secret_codes()
     code_dict = {}
     for code in allCodes:
@@ -26,10 +26,10 @@ if __name__ == '__main__':
                            "number_3": code[2],
                            "solution_count": 0}
 
-    vA = V04()
-    vB = V09()
-    vC = V13()
-    vD = V17()
+    vA = getVerifier(num1)
+    vB = getVerifier(num2)
+    vC = getVerifier(num3)
+    vD = getVerifier(num4)
 
 
     for a in range(vA.number_criteria()):
@@ -60,5 +60,22 @@ if __name__ == '__main__':
     print(vB.solutions)
     print(vC.solutions)
     print(vD.solutions)
+    return code_dict
 
+def getVerifier(number):
+    if number == 4:
+        return V04()
+    if number == 9:
+        return V09()
+    if number == 11:
+        return V11()
+    if number == 13:
+        return V13()
+    if number == 14:
+        return V14()
+    if number == 17:
+        return V17()
 
+# Press the green button in the gutter to run the script.
+if __name__ == '__main__':
+    solve(4,9,11,14)
