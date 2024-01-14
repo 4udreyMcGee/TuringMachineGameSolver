@@ -1,5 +1,5 @@
-from Verifier import Verifier
-from utils import count
+from verifiers.Verifier import Verifier
+from verifiers.utils import count
 
 
 class V17(Verifier):

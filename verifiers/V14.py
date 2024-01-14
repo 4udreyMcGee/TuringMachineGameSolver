@@ -1,5 +1,5 @@
 from Constants import *
-from Verifier import Verifier
+from verifiers.Verifier import Verifier
 
 
 class V14(Verifier):

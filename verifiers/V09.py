@@ -1,6 +1,6 @@
-import utils
+from verifiers import utils
 
-from Verifier import Verifier
+from verifiers.Verifier import Verifier
 
 
 class V09(Verifier):

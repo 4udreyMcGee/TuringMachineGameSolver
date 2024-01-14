@@ -1,4 +1,4 @@
-from Verifier import Verifier
+from verifiers.Verifier import Verifier
 from Constants import *
 
 
