@@ -10,3 +10,7 @@ def count(code, number):
     if code[PURPLE] == number:
         counter += 1
     return counter
+
+
+def sum_all(code):
+    return code[BLUE] + code[YELLOW] + code[PURPLE]
