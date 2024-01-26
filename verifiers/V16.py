@@ -8,7 +8,7 @@ class V16(Verifier):
     def test(self, number, code):
         even = count(code, 2) + count(code, 4)
         if number == 0:
-            return even == 2
+            return even >= 2
         if number == 1:
             return even <= 1
 
